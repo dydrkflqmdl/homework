@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Builder //b
+@Builder
 public class BoardResponseDto {
     private String title;
     private String author;

@@ -1,6 +1,7 @@
 package com.example.board.domain;
 
 import com.example.board.dto.BoardRequestDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -25,6 +26,7 @@ public class Board extends Timestamped { // 생성,수정 시간을 자동으로
     @Column(nullable = false)
     private String content;
 
+    @JsonIgnore
     @Column(nullable = false)
     private String password;
 
